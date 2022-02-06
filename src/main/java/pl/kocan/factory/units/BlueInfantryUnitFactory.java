@@ -1,8 +1,8 @@
 package pl.kocan.factory.units;
 
-public class UnitFactory extends Factory {
+public class BlueInfantryUnitFactory extends InfantryFactory {
     @Override
-    public Unit createUnit(UnitType type) {
+    public InfantryUnit createUnit(UnitType type) {
 
         switch (type) {
             case TANK:
