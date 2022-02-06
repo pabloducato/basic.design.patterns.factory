@@ -1,4 +1,4 @@
-package pl.kocan.factory;
+package pl.kocan.factory.units;
 
 import lombok.Getter;
 

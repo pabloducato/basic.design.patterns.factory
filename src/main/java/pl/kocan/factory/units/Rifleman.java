@@ -1,7 +1,7 @@
-package pl.kocan.factory;
+package pl.kocan.factory.units;
 
 public class Rifleman extends Unit {
-    public Rifleman(int hp, int exp, int dmgDone) {
+    Rifleman(int hp, int exp, int dmgDone) {
         super(hp, exp, dmgDone);
     }
 }
