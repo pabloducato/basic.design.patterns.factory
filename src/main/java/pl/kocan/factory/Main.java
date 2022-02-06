@@ -1,9 +1,6 @@
 package pl.kocan.factory;
 
-import pl.kocan.factory.units.InfantryFactory;
-import pl.kocan.factory.units.InfantryUnit;
-import pl.kocan.factory.units.RedInfantryUnitFactory;
-import pl.kocan.factory.units.UnitType;
+import pl.kocan.factory.units.*;
 
 public class Main {
 
@@ -14,15 +11,16 @@ public class Main {
 //        System.out.println(tank);
 //        System.out.println(infantryman);
 
-        InfantryFactory factory = new RedInfantryUnitFactory();
+        Factory blueFactory = new BlueFactory();
+        Factory redFactory = new RedFactory();
 
-        InfantryUnit tank = factory.createUnit(UnitType.TANK);
-        InfantryUnit infantryman = factory.createUnit(UnitType.RIFLEMAN);
+        MechanizedUnit redTank = redFactory.createMechanizedUnit(UnitType.TANK);
+        InfantryUnit redInfantry = redFactory.createInfantryUnit(UnitType.TANK);
+        AirUnit redHelicopter = redFactory.createAirUnit(UnitType.HELICOPTER);
 
-        System.out.println(tank);
-        System.out.println(infantryman);
-
-//        Unit tank2 = new Tank(1, 1, 2);
+        MechanizedUnit blueTank = blueFactory.createMechanizedUnit(UnitType.TANK);
+        InfantryUnit blueInfantry = blueFactory.createInfantryUnit(UnitType.TANK);
+        AirUnit blueHelicopter = blueFactory.createAirUnit(UnitType.HELICOPTER);
 
     }
 
